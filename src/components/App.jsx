@@ -11,11 +11,9 @@ export class App extends Component {
     bad: 0,
   };
 
-  leaveFeedback = e => {
-    const target = e.currentTarget.name;
-
-    this.setState(prevState => ({
-      [target]: prevState[target] + 1,
+  leaveFeedback = option => {
+      this.setState(prevState => ({
+      [option]: prevState[option] + 1,
     }));
   };
 
